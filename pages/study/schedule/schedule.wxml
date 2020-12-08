@@ -1,0 +1,5 @@
+<!--pages/study/schedule/schedule.wxml-->
+<view>
+  <text>今日待办与行程\n</text>
+  <text>早上好！现在是{{time}}</text>
+</view>
