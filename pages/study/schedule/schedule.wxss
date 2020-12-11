@@ -1,1 +1,80 @@
 /* pages/study/schedule/schedule.wxss */
+.top{
+  display: flex;
+  height: 50px;
+  flex-direction: row;
+  background-color: #EFEFF4;
+  color: #333;
+}
+.scroll {
+  flex: 1;
+  z-index: 100;
+}
+.classRoom{
+  position: absolute;
+  bottom: 10rpx;
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+.top-text{
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 30rpx;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.left{
+  width: 80rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.flex-item {
+  width: 90rpx;
+  height: 100px;
+}
+.kcb-item {
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+}
+.smalltext {
+  position: absolute;
+  top: 40rpx;
+  left: 8rpx;
+  /* margin: 40rpx 0 40rpx 8rpx; */
+  font-size: 26rpx;
+  color: #fff;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical; 
+}
+.classRoom{
+  position: absolute;
+  bottom: 10rpx;
+  font-size: 8pt;
+  color: #fff;
+  padding-left: 2px;
+}
+.logo{
+  color: #FFF;
+  font-size: 8pt;
+  text-align: center;
+  line-height: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+.scroll {
+  flex: 1;
+  z-index: 100;
+}

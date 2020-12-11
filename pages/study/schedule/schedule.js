@@ -2,25 +2,27 @@
 var util = require('../../../utils/util.js');
 Page({
   data: {
-    time: util.myformatTime(new Date())
+    time: util.myformatTime(new Date()),
+    test: 0,
+    wlist: null
   },
-  onLoad: function () {console.log(111)},
-  onReady: function () {console.log(111)},
-  onShow: function () {console.log(111)},
-  onHide: function () {console.log(111)},
-  onUnload: function () {console.log(111)},
-  onPullDownRefresh: function () {console.log(111)},
-  onReachBottom: function () {console.log(111)},
-  onShareAppMessage: function () {console.log(111)},
-  test: function () {
+  handleClick: function (e) {
     const db = wx.cloud.database()
-    var that = this
-    db.collection('todos').doc('e62469b25fce46af01128a552c3fa02d').get({
+    let that = this
+    db.collection('kebiao').get({
       success: function (res) {
         that.setData({
-          ttt: res.data['description']
+          wlist: res.data
         })
       }
     })
-  }
+  },
+  onLoad: function () {console.log(1234)},
+  onReady: function () {console.log(1234)},
+  onShow: function () {console.log(1234)},
+  onHide: function () {console.log(1234)},
+  onUnload: function () {console.log(1234)},
+  onPullDownRefresh: function () {console.log(1234)},
+  onReachBottom: function () {console.log(1234)},
+  onShareAppMessage: function () {console.log(1234)},
 })
