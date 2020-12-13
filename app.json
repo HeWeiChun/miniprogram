@@ -8,7 +8,13 @@
     "pages/my/my",
     "pages/study/schedule/schedule",
     "pages/study/readingRoom/readingRoom",
-    "pages/study/grade/grade"
+    "pages/study/grade/grade",
+    "pages/life/free/free",
+    "pages/life/garbage/garbage",
+    "pages/life/help/help",
+    "pages/social/debunk/debunk",
+    "pages/social/question/question",
+    "pages/social/schoolmail/schoolmail"
   ],
   "window":{
     "backgroundTextStyle":"light",

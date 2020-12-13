@@ -1,1 +1,2 @@
 /* pages/life/life.wxss */
+@import "../../utils/util.wxss";
