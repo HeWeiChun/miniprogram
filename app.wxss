@@ -1,4 +1,6 @@
 /**app.wxss**/
+@import 'weui/weui.wxss';
+
 .container {
   height: 100%;
   display: flex;
@@ -8,3 +10,12 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.space {
+  height:20rpx;
+  background-color: #F2f2f2;
+}
+.page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica,
+    Segoe UI, Arial, Roboto, 'PingFang SC', 'miui', 'Hiragino Sans GB', 'Microsoft Yahei',
+    sans-serif;
+}
