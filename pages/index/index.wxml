@@ -1,14 +1,17 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-  <button bindtap='ck'>登录</button>
+<view id="total">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text class="userinfo-nickname">\n{{userInfo.nickName}}</text>
+  </block>
+  <form bindsubmit="formSubmit">
+    <view id="t1">
+      <text>账号</text><input type="text" name="username" id="use" placeholder="输入您的账号" value="{{username}}"></input>
+    </view>
+    <view id="t2">
+      <text>密码</text><input type="password" name="password" id="pass1" placeholder="输入您密码" value="{{password}}"></input>
+    </view>
+    <button id="btn1" form-type="submit"><text>登陆</text></button>
+  </form>
 </view>

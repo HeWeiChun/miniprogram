@@ -17,8 +17,8 @@ Component({
   },
   methods:{
     handleClick: function (e) {
-      const db = wx.cloud.database()
-      let that = this
+      const db = wx.cloud.database();
+      let that = this;
       db.collection('kebiao').get({
         success: function (res) {
           that.setData({
