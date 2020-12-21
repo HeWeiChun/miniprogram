@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "free": "free/free",
-    "garbage": "garbage/garbage",
-    "help": "help/help"
-  }
-}

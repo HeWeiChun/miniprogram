@@ -1,8 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "question": "debunk/debunk",
-    "debunk": "debunk/debunk",
-    "schoolmail": "schoolmail/schoolmail"
-  }
-}
