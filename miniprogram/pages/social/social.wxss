@@ -1,0 +1,2 @@
+/* pages/social/social.wxss */
+@import "../../utils/util.wxss";

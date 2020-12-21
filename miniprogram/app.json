@@ -1,0 +1,66 @@
+
+{
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/study/study",
+    "pages/life/life",
+    "pages/social/social",
+    "pages/my/my",
+    "pages/study/schedule/schedule",
+    "pages/study/readingRoom/readingRoom",
+    "pages/study/grade/grade",
+    "pages/life/free/free",
+    "pages/life/garbage/garbage",
+    "pages/life/garbage/camera/camera",
+    "pages/life/garbage/search",
+    "pages/life/garbage/result/list",
+    "pages/life/help/help",
+    "pages/social/debunk/debunk",
+    "pages/social/question/question",
+    "pages/social/schoolmail/schoolmail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#aaaaaa",  
+    "backgroundColor": "#FFFFFF", 
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "images/study.png",
+        "selectedIconPath": "images/studyfill.png"
+      },
+      {
+        "pagePath": "pages/life/life",
+        "text": "生活",
+        "iconPath": "images/life.png",
+        "selectedIconPath": "images/lifefill.png"
+      },
+      {
+        "pagePath": "pages/social/social",
+        "text": "社交",
+        "iconPath": "images/social.png",
+        "selectedIconPath": "images/socialfill.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my.png",
+        "selectedIconPath": "images/myfill.png"
+      }
+    ]
+  }
+}

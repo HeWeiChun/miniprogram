@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "schedule": "schedule/schedule",
+    "readingRoom": "readingRoom/readingRoom",
+    "grade": "grade/grade"
+  }
+}

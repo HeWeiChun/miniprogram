@@ -1,4 +1,6 @@
 {
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "functions/",
   "description": "项目配置文件",
   "packOptions": {
     "ignore": []
@@ -49,6 +51,7 @@
   "isGameTourist": false,
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "plugin": {
       "list": []
@@ -64,6 +67,12 @@
         {
           "name": "pages/study/study",
           "pathName": "pages/study/study",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/life/life",
+          "pathName": "pages/life/life",
           "scene": null
         }
       ]

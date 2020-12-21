@@ -1,0 +1,14 @@
+<!--pages/study/readingRoom/readingRoom.wxml-->
+<text>pages/study/readingRoom/readingRoom.wxml\n</text>
+<text>pages/study/readingRoom/readingRoom.wxml\n</text>
+<text>pages/study/readingRoom/readingRoom.wxml\n</text>
+<text>pages/study/readingRoom/readingRoom.wxml\n</text>
+<text>1\n</text>
+<text>2\n</text>
+<text>3\n</text>
+<text>4\n</text>
+<text>5\n</text>
+<text>6\n</text>
+<view bindtap="handleClick">
+    <text>早上好！今天是{{test}}\n</text>
+</view>

@@ -1,4 +1,4 @@
-// pages/life/garbage/garbage.js
+// pages/life/help/help.js
 Component({
   /**
    * 组件的属性列表

@@ -1,0 +1,6 @@
+/* pages/study/readingRoom/readingRoom.wxss */
+.food_wrap{
+  height: 1360rpx;
+  overflow: hidden;
+  border:1rpx solid #f40
+}
