@@ -1,4 +1,6 @@
 /* pages/study/schedule/schedule.wxss */
+@import "../../../colorui/main.wxss";
+@import "../../../colorui/icon.wxss";
 .top{
   display: flex;
   height: 50px;
@@ -55,13 +57,6 @@
   word-break: break-all;
   -webkit-box-orient: vertical; 
 }
-.classRoom{
-  position: absolute;
-  bottom: 10rpx;
-  font-size: 8pt;
-  color: #fff;
-  padding-left: 2px;
-}
 .logo{
   color: #FFF;
   font-size: 8pt;
@@ -76,5 +71,5 @@
 }
 .scroll {
   flex: 1;
-  z-index: 100;
+  z-index: 90;
 }

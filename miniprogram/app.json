@@ -18,7 +18,6 @@
     "pages/life/garbage/garbage",
     "pages/life/garbage/camera/camera",
     "pages/life/garbage/search",
-    "pages/life/garbage/result/list",
     "pages/life/help/help",
     "pages/social/debunk/debunk",
     "pages/social/question/question",
@@ -33,33 +32,33 @@
   "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
-    "color": "#aaaaaa",  
+    "color": "#000000",
     "backgroundColor": "#FFFFFF", 
     "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/study/study",
         "text": "学习",
-        "iconPath": "images/study.png",
-        "selectedIconPath": "images/studyfill.png"
+        "iconPath": "images/tabbar/study.png",
+        "selectedIconPath": "images/tabbar/studyfill.png"
       },
       {
         "pagePath": "pages/life/life",
         "text": "生活",
-        "iconPath": "images/life.png",
-        "selectedIconPath": "images/lifefill.png"
+        "iconPath": "images/tabbar/life.png",
+        "selectedIconPath": "images/tabbar/lifefill.png"
       },
       {
         "pagePath": "pages/social/social",
         "text": "社交",
-        "iconPath": "images/social.png",
-        "selectedIconPath": "images/socialfill.png"
+        "iconPath": "images/tabbar/social.png",
+        "selectedIconPath": "images/tabbar/socialfill.png"
       },
       {
         "pagePath": "pages/my/my",
         "text": "我的",
-        "iconPath": "images/my.png",
-        "selectedIconPath": "images/myfill.png"
+        "iconPath": "images/tabbar/my.png",
+        "selectedIconPath": "images/tabbar/myfill.png"
       }
     ]
   }

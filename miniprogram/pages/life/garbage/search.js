@@ -7,20 +7,37 @@ Page({
     datas: [],
     searchTxt: "",
     logo: "",
-    ishavedata: true
+    ishavedata: true,
+    disabled: false,
+    value: null
   },
   onLoad: function (options) {
     this.data.dataCount = db.collection('product').count()
-    this.data.page = 0
-    this.data.datas = []
-    this.data.ishavedata = true
     if (Object.keys(options).length != 0) {
       this.data.searchTxt = options.searchTxt;
+      this.setData({
+        disabled: true,
+        value: options.searchTxt
+      })
       this.onGetData()
     }
   },
+  init: function (e) {
+    this.setData({
+      page: 0,
+      dataCount: 0,
+      datas: [],
+      ishavedata: true,
+      disabled: false,
+      value: null
+    })
+  },
   searchIcon: function (e) {
+    this.init()
     this.data.searchTxt = e.detail.value
+    this.setData({
+      value: e.detail.value
+    })
     console.log(e.detail.value)
     this.onGetData()
   },
@@ -29,7 +46,6 @@ Page({
     wx.showLoading({
       title: '正在加载中.....',
     })
-    console.log(this.data.page)
     db.collection('product').skip(this.data.page * this.data.MAX_LIMIT).limit(this.data.MAX_LIMIT).where({
       name: db.RegExp({
         regexp: that.data.searchTxt
@@ -37,8 +53,11 @@ Page({
     }).get({
       success: function (res) {
         wx.hideLoading()
-        console.log(res.data.length)
-        console.log("11111")
+        if (that.data.page == 0 && res.data.length == 0) {
+          that.setData({
+            ishavedata: false
+          })
+        }
         that.data.page = that.data.page + 1
         for (var i = 0; i < res.data.length; i++) {
           that.data.datas.push(res.data[i])
@@ -46,7 +65,7 @@ Page({
         that.setData({
           datas: that.data.datas
         })
-        console.log(that.data.datas)
+        console.log(that.data)
       },
       fail: function (res) {
         wx.hideLoading()
@@ -58,7 +77,7 @@ Page({
     })
   },
   onReachBottom: function () {
-    if(this.data.ishavedata)
+    if (this.data.ishavedata)
       this.onGetData()
   },
 })
