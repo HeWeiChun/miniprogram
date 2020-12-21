@@ -33,6 +33,17 @@
   width: 300rpx;
   height: 300rpx;
 }
+.no-view{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 250rpx;
+}
+.no-img{
+  width: 300rpx;
+  height: 300rpx;
+}
 .content{
   color:#00cc77;
   font-size:30rpx;

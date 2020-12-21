@@ -73,6 +73,19 @@
         {
           "name": "pages/life/life",
           "pathName": "pages/life/life",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/text/text",
+          "pathName": "pages/text/text",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/social/social",
+          "pathName": "pages/social/social",
+          "query": "",
           "scene": null
         }
       ]

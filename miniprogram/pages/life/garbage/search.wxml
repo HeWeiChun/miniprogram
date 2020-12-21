@@ -1,7 +1,7 @@
 <view class="cu-bar bg-darkGray search">
   <view class=" search-form  round ">
     <text class="cuIcon-search text-green"></text>
-    <input type="text" placeholder="输入垃圾名称" confirm-type="search" focus="{{true}}" bindconfirm="searchIcon"></input>
+    <input type="text" placeholder="输入垃圾名称" confirm-type="search" focus="{{true}}" bindconfirm="searchIcon" disabled="{{disabled}}" value="{{value}}"></input>
   </view>
 </view>
 <block wx:if="{{ishavedata}}">
@@ -26,8 +26,5 @@
   <view class="no-view">
     <image class="no-img" src="/images/no-result.png"></image>
     <text class="content">未找到相关内容</text>
-    <view class="btn-view">
-      <view class="btn-commit" bindtap="onGoHome"> 回首页</view>
-    </view>
   </view>
 </block>
