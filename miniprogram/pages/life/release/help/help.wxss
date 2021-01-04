@@ -1,0 +1,47 @@
+/* pages/life/release/free/free.wxss */
+
+/* pages/publish/publish.wxss */
+.component{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  padding-top: 5rpx;
+ }
+ .text{
+  width: 100%;
+  /* margin-bottom: 40px; */
+  font-size: 15px;
+  margin: 5px
+ }
+ .image{
+  width:31%;
+  height: 100px;
+  padding: 2px
+ }
+ .moment_img{
+  width: 98px;
+  height: 98px;
+ }
+ .goods_price {
+  padding: 15rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: var(--themeColor);
+}
+ .image_content{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px
+ }
+ .button {
+   height: 100rpx;
+   width: 100%;
+   background-color: rgb(86, 159, 243);
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: fixed;
+   bottom: 0px;
+ }
+ 

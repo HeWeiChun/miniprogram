@@ -1,66 +1,54 @@
 // pages/study/grade/grade.js
-Page({
-
-  /**
-   * 页面的初始数据
-   */
+const app = getApp()
+Component({
   data: {
-
+    xueqi: ["20181", "20182", "20191", "20192"],
+    score: null,
+    nowXueqi: null,
+    heightRpx: app.globalData.heightRpx
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  lifetimes: {
+    attached: function () {
+      this.data.nowXueqi="20181"
+      this.getScore()
+    },
+    moved: function () {},
+    detached: function () {},
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  pageLifetimes: {
+    show: function () {},
+    hide: function () {},
+    resize: function () {},
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  methods: {
+    switchSwiper: function (e) {
+      this.data.nowXueqi = this.data.xueqi[e.detail.current];
+      console.log(this.data.nowXueqi)
+      this.getScore()
+    },
+    getScore: function (e) {
+      const db = wx.cloud.database();
+      const _ = db.command;
+      let that = this;
+      console.log(typeof(that.data.nowXueqi))
+      wx.cloud.callFunction({
+        name: 'score',
+        data: {
+          xueqi: that.data.nowXueqi,
+        },
+        success: function (res) {
+          console.log(res.result)
+          that.setData({
+            score: res.result.data
+          })
+        },
+        fail: function (res) {
+          console.log(res)
+        },
+      })
+    }
   }
 })

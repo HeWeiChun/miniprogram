@@ -1,0 +1,45 @@
+<!-- pages/goods_detail/index.wxml -->
+<import src="wxParse/wxParse.wxml" />
+<view class="detail_swiper">
+  <!--
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
+    <swiper-item wx:for="{{goodsObj.pics}}" wx:key="id" bindtap="handlePrevewImage" data-url="{{item.pic}}">
+      <image src="{{item.pic}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+  -->
+  <scroll-view scroll-x="{{true}}" style="white-space: nowrap;">
+
+    <view class="view_list_scr" wx:for="{{goodsObj.pics}}" wx:key="id" data-url="{{item.pic}}">
+      <image src="{{item.pic}}" mode="widthFix"></image>
+    </view>
+
+  </scroll-view>
+</view>
+<view class="goods_price">￥{{goodsObj.minPrice}}</view>
+<view class="goods_name_row">
+  <view class="goods_name">{{goodsObj.name}}</view>
+  <view class="goods_tele">{{goodsObj.tele}}</view>
+  <!--
+  
+  -->
+</view>
+<view class="goods_info">
+  <view class="goods_info_title">test{{goodsObj.inro}}</view>
+  <!--
+  <view class="goods_info_content">
+    <!-- 富文本 -->
+    <!-- {{goodsObj.goods_introduce}} -->
+    <!-- <rich-text is="wxParse" nodes="{{goodsObj.goods_introduce}}"></rich-text> -->
+  <!-- <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>--> 
+   
+</view>
+
+<view class="btm_tool">
+  <view class="btm_goods_price">￥{{goodsObj.minPrice}}</view>
+  <view class="goods_tele">{{goodsObj.tele}}</view>
+  <!--
+  
+-->
+</view>

@@ -12,16 +12,15 @@
     "pages/social/social",
     "pages/my/my",
     "pages/study/schedule/schedule",
-    "pages/study/readingRoom/readingRoom",
     "pages/study/grade/grade",
     "pages/life/free/free",
     "pages/life/garbage/garbage",
     "pages/life/garbage/camera/camera",
     "pages/life/garbage/search",
     "pages/life/help/help",
-    "pages/social/debunk/debunk",
-    "pages/social/question/question",
-    "pages/social/schoolmail/schoolmail"
+    "pages/social/publish/publish",
+    "pages/social/authorize/authorize",
+    "pages/social/postdetail/postdetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

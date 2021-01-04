@@ -1,8 +1,5 @@
 {
-  "component": true,
-  "usingComponents": {
-    "question": "question/question",
-    "debunk": "debunk/debunk",
-    "schoolmail": "schoolmail/schoolmail"
-  }
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "校园论坛"
 }

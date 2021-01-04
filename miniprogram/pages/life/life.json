@@ -4,5 +4,6 @@
     "free": "free/free",
     "garbage": "garbage/garbage",
     "help": "help/help"
-  }
+  },
+  "navigationBarTitleText": "生活"
 }

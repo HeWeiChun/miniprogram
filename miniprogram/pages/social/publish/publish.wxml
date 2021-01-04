@@ -1,0 +1,14 @@
+<view class='page'>
+    <textarea class='text' bindinput="input" placeholder="写点什么吧...(不少于{{minContentLength}}字)" 
+                maxlength='{{maxContentLength}}' show-confirm-bar='false' auto-height="true"/>
+    <view class="image_content">
+        <view class='image' wx:for="{{img_url}}">
+            <image class="moment_img" src="{{item}}"></image>
+        </view>
+        <view class='image' style='display:{{hideAdd?"none":"block"}}'>
+            <image bindtap="chooseimage" class="moment_img" src='../../../images/add.png'></image>
+        </view>
+    </view>
+    <button bindtap="send" style="background-color: rgb(86, 159, 243);color: white;">发布</button>
+    <!-- <view class="button" bindtap='send'>发布</view> -->
+</view>

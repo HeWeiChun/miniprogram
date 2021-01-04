@@ -9,9 +9,14 @@ Component({
     nowWeek: 3,
     week: [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
     userInfo: app,
+    currentTab: 10,
+    heightRpx: app.globalData.heightRpx
   },
   lifetimes: {
     attached: function () {
+      this.setData({
+        currentTab:14
+      })
       this.handleClick()
     }, 
   },

@@ -7,7 +7,7 @@
   </view>
 </view>
 <view class='content-wrapper'>
-  <swiper current='{{currentTab}}' style="height: 1280rpx" display-multiple-items='1' bindchange='switchSwiper'>
+  <swiper current='{{currentTab}}' style="height: {{heightRpx-100}}rpx" display-multiple-items='1' bindchange='switchSwiper'>
     <swiper-item item-id="tableft">
       <garbage />
     </swiper-item>

@@ -1,0 +1,40 @@
+/* pages/publish/publish.wxss */
+.page{
+ padding-left: 20rpx;
+ padding-right: 20rpx;
+ padding-top: 30rpx;
+}
+.text{
+ min-height: 100rpx;
+ max-height: 250rpx; /*最多显示三行*/
+ width: 100%;
+ margin-bottom: 40px;
+ font-size: 15px;
+ padding: 5px
+}
+.image{
+ width:31%;
+ height: 100px;
+ padding: 2px
+}
+.moment_img{
+ width: 98px;
+ height: 98px;
+}
+.image_content{
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ margin-bottom: 30px
+}
+.button {
+  height: 100rpx;
+  width: 100%;
+  background-color: rgb(86, 159, 243);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+}

@@ -20,8 +20,11 @@ wx.cloud.init({}),
     //事件处理函数
     bindViewTap: function () {
       wx.navigateTo({
-        url: '../logs/logs'
-      })
+        url: '../logs/logs',
+        success: function(e){},
+        fail:function(e){console.log(e.errMsg)}
+      },
+      )
     },
     onLoad: function () {
       if (app.globalData.userInfo) {

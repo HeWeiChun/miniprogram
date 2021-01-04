@@ -1,7 +1,9 @@
 // pages/life/life.js
+const app = getApp()
 Page({
   data: {
-    currentTab: 0
+    currentTab: 0,
+    heightRpx: app.globalData.heightRpx
   },
   switchTab: function (e) {
     let tab = e.currentTarget.id
