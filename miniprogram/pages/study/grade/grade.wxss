@@ -1,3 +1,3 @@
-/* pages/social/question/question.wxss */
+/* pages/study/grade/grade.wxss */
 @import "../../../colorui/main.wxss";
 @import "../../../colorui/icon.wxss";
