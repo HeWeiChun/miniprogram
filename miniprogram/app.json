@@ -18,6 +18,7 @@
     "pages/life/garbage/camera/camera",
     "pages/life/garbage/search",
     "pages/life/help/help",
+    "pages/life/goods_detail/index",
     "pages/social/publish/publish",
     "pages/social/authorize/authorize",
     "pages/social/postdetail/postdetail"

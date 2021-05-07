@@ -10,22 +10,22 @@
   -->
   <scroll-view scroll-x="{{true}}" style="white-space: nowrap;">
 
-    <view class="view_list_scr" wx:for="{{goodsObj.pics}}" wx:key="id" data-url="{{item.pic}}">
-      <image src="{{item.pic}}" mode="widthFix"></image>
+    <view class="view_list_scr" wx:for="{{goodsObj.image_url}}" wx:key="id" data-url="{{item}}">
+      <image src="{{item}}" mode="widthFix"></image>
     </view>
 
   </scroll-view>
 </view>
-<view class="goods_price">￥{{goodsObj.minPrice}}</view>
+<view class="goods_price" justify-content="center">{{goodsObj.title}}</view>
 <view class="goods_name_row">
-  <view class="goods_name">{{goodsObj.name}}</view>
+  <view class="goods_name"> </view>
   <view class="goods_tele">{{goodsObj.tele}}</view>
   <!--
   
   -->
 </view>
 <view class="goods_info">
-  <view class="goods_info_title">test{{goodsObj.inro}}</view>
+  <view class="goods_info_title">{{goodsObj.content}}</view>
   <!--
   <view class="goods_info_content">
     <!-- 富文本 -->
@@ -37,8 +37,8 @@
 </view>
 
 <view class="btm_tool">
-  <view class="btm_goods_price">￥{{goodsObj.minPrice}}</view>
-  <view class="goods_tele">{{goodsObj.tele}}</view>
+  <view class="btm_goods_price" color="#e64340">￥{{goodsObj.minPrice}}</view>
+  <view class="goods_tele"style='color:#aaa;text-decoration:line-through'>¥{{goodsObj.originalPrice}}</view>
   <!--
   
 -->

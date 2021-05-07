@@ -13,7 +13,7 @@
     <view class="goods-container">
       <view style='margin-left:20rpx;width:730rpx;height:4rpx;background-color:#f4f4f4;'></view>
       <view style='height:21rpx;background-color:#fff;'></view>
-      <view class="goods-box" wx:for="{{listgoods}}" wx:key="id" wx:for-item="item" data-id="{{item.id}}"
+      <view class="goods-box" wx:for="{{listgoods}}" wx:key="_id" wx:for-item="item" data-id="{{item._id}}"
         bindtap="toDetailsTap">
         <template is="recommend-goods-item" data="{{item}}"> </template>
       </view>
@@ -24,3 +24,7 @@
     <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多啦</view>
   </view>
 </scroll-view>
+
+<mp-dialog title="联系方式：{{tele}}" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>{{intro}}</view>
+    </mp-dialog>

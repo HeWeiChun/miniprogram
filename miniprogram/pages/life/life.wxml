@@ -19,3 +19,7 @@
     </swiper-item>
   </swiper>
 </view>
+
+
+
+<floatbut backTop="{{backTop}}" release_sign="{{release_sign}}"></floatbut> 

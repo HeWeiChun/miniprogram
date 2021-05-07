@@ -56,16 +56,21 @@ Component({
           _this.setData({
             goods: res.data
           })
-          console.log(_this.data.goods);
+          //console.log(_this.data.goods);
         }
       });
     },
 
     toDetailsTap:function(e)
     {
-      console.log('../goods_detail/index?id=' + e.currentTarget.dataset.id)
-      // const idstr =  e.currentTarget.dataset.id.toString()
-      
+      const idstr =  e.currentTarget.dataset.id.toString()
+      wx.navigateTo({
+        url: '../life/goods_detail/index?id='+idstr,
+        fail : function(e)
+        {
+          console.log(e.errMsg)
+        }
+      })
       
       
     }
