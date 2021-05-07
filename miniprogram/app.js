@@ -21,7 +21,6 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
-
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {
@@ -32,10 +31,24 @@ App({
         }
       }
     })
+    wx.getSystemInfo({
+      success: res => {
+        console.log(res);
+        console.log('height=' + res.windowHeight);
+        console.log('width=' + res.windowWidth);
+        console.log(this)
+        this.globalData.windowHeight=res.windowHeight;
+        this.globalData.windowWidth=res.windowWidth;
+        this.globalData.heightRpx=750*res.windowHeight/res.windowWidth;
+      }
+    })
   },
   globalData: {
     userInfo: null,
     username: null,
-    userid: null
+    userid: null,
+    windowHeight:null,
+    windowWeigh:null,
+    heightRpx:null
   }
 })

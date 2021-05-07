@@ -1,4 +1,5 @@
 {
   "onReachBottomDistance": 50,
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText": "垃圾分类"
 }

@@ -1,2 +1,47 @@
 <!--pages/study/grade/grade.wxml-->
-<text>pages/study/grade/grade.wxml</text>
+
+<swiper current='{{currentTab}}' bindchange='switchSwiper' style="height: 80rpx">
+  <swiper-item wx:for="{{xueqi}}" wx:key="index">
+    <view style="text-align:center;background-color: #FFFFFF;font-size:20px;">
+      <text wx:if="{{(item)!=20181}}" class="cuIcon-back lg text-gray"></text>
+      <text class='text-black text-bold' wx:if="{{(item)==20181}}">2018-2019-1学期</text>
+      <text class='text-black text-bold' wx:elif="{{(item)==20182}}">2018-2019-2学期</text>
+      <text class='text-black text-bold' wx:elif="{{(item)==20191}}">2019-2020-1学期</text>
+      <text class='text-black text-bold' wx:elif="{{(item)==20192}}">2019-2020-2学期</text>
+      <text wx:if="{{(item)!=20192}}" class="cuIcon-right lg text-gray" style="text-align:right"></text>
+    </view>
+  </swiper-item>
+</swiper>
+<scroll-view style="height: {{heightRpx-180}}rpx" scroll-y>
+  <view wx:for="{{score}}" wx:key="index">
+    <view class="cu-card case">
+      <view class="cu-item shadow">
+        <view class="cu-list menu-avatar">
+          <view class="cu-item">
+            <image wx:if="{{item.score>=93 && item.score<=100}}" class="cu-avatar round lg"
+              src="../../../images/A+.png"></image>
+            <image wx:elif="{{item.score>=85 && item.score<93}}" class="cu-avatar round lg" src="../../../images/A.png">
+            </image>
+            <image wx:elif="{{item.score>=80 && item.score<85}}" class="cu-avatar round lg"
+              src="../../../images/B+.png"></image>
+            <image wx:elif="{{item.score>=75 && item.score<80}}" class="cu-avatar round lg" src="../../../images/B.png">
+            </image>
+            <image wx:elif="{{item.score>=70 && item.score<75}}" class="cu-avatar round lg"
+              src="../../../images/C+.png"></image>
+            <image wx:elif="{{item.score>=65 && item.score<70}}" class="cu-avatar round lg" src="../../../images/C.png">
+            </image>
+            <image wx:elif="{{item.score>=60 && item.score<65}}" class="cu-avatar round lg" src="../../../images/D.png">
+            </image>
+            <image wx:elif="{{item.score<60}}" class="cu-avatar round lg" src="../../../images/F.png"></image>
+            <view class="content flex-sub">
+              <view class="text-black text-bold">{{item.cname}}</view>
+            </view>
+            <view class="solid-bottom text-sl padding">
+              <view class="text-black text-bold flex justify-between">{{item.score}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

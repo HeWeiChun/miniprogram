@@ -1,0 +1,30 @@
+
+<view class = 'component'>
+  <textarea class='text' bindinput="input_title" placeholder="标题(不多于18字)" show-confirm-bar='false'  auto-height />
+  <view style="width:100%;height:1px;background-color:#000000;"/>
+  <textarea class='text' bindinput="input_content" placeholder="写点什么吧...(不少于{{minContentLength}}字)" maxlength='{{maxContentLength}}' show-confirm-bar='false' height = '20rpx' />
+  <view style="width:100%;height:1px;background-color:#000000;"/>
+  <view style="goods_price">价格</view>
+  <textarea class='text' bindinput="input_orignalMoney" placeholder="原价"  show-confirm-bar='false' auto-height />
+  <view style="width:100%;height:1px;background-color:#000000;"/>
+  <view style="goods_price">联系方式</view>
+  <textarea class='text' bindinput="input_tele" placeholder="联系方式"  show-confirm-bar='false' auto-height />
+  <view style="width:100%;height:1px;background-color:#000000;"/>
+  <view style="goods_price">类型</view>
+  <view class="page-section">
+    
+      <radio-group bindchange="radioChange">
+        <view class="weui-cell weui-check__label" wx:for="{{items}}" wx:key="{{item.value}}">
+
+          <view class="weui-cell__hd">
+            <radio value="{{item.value}}" checked="true"/>
+          </view>
+
+          <view class="weui-cell__bd">{{item.name}}</view>
+        </view>
+      </radio-group>
+    
+  </view>
+    <button bindtap="send" style="background-color: rgb(86, 159, 243);color: white;">发布帮帮</button>
+    <!-- <view class="button" bindtap='send'>发布</view> -->
+</view>

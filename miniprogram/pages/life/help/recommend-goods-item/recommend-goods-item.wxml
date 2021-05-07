@@ -1,0 +1,19 @@
+
+
+<template name="recommend-goods-item">
+  <view class="img-box">
+    <image src="{{item.pic_src}}" class="image">
+    </image>
+  </view>
+  <view class='goods-info-box'>
+    <view class="goods-title_money">
+      <view class="goods-title">{{item.title}}</view>
+      <text class='goods-minPrice'> ￥{{item.price}}</text>
+    </view>
+    <view class='goods-introduction'>{{item.intro}}</view>
+    <view class="goods-price-box">
+    </view>
+    
+  </view>
+
+</template>

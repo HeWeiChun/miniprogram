@@ -2,7 +2,8 @@
 const app = getApp()
 Page({
   data: {
-    currentTab: 0
+    currentTab: 0,
+    heightRpx: app.globalData.heightRpx
   },
   switchTab: function (e) {
     let tab = e.currentTarget.id
@@ -10,13 +11,9 @@ Page({
       this.setData({
         currentTab: 0
       })
-    } else if (tab === 'tabmiddle') {
-      this.setData({
-        currentTab: 1
-      })
     } else if (tab === 'tabright') {
       this.setData({
-        currentTab: 2
+        currentTab: 1
       })
     }
   },
@@ -26,13 +23,9 @@ Page({
       this.setData({
         currentTab: 0
       })
-    } else if (tab === 'tabmiddle') {
-      this.setData({
-        currentTab: 1
-      })
     } else if (tab === 'tabright') {
       this.setData({
-        currentTab: 2
+        currentTab: 1
       })
     }
   },

@@ -3,7 +3,7 @@
 @import "../../../colorui/icon.wxss";
 .top{
   display: flex;
-  height: 50px;
+  height: 80rpx;
   flex-direction: row;
   background-color: #EFEFF4;
   color: #333;

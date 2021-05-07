@@ -1,2 +1,30 @@
 <!--pages/life/help/help.wxml-->
-<text>pages/life/help/help.wxml</text>
+<import src="recommend-goods-item/recommend-goods-item.wxml" />
+
+
+<view position="absolute">
+  <mp-searchbar bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+</view>
+<scroll-view style="height: 90%" scroll-y>
+  <view class="weui-loadmore weui-loadmore_line">
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">帮帮列表</view>
+  </view>
+  <view class="type-goods">
+    <view class="goods-container">
+      <view style='margin-left:20rpx;width:730rpx;height:4rpx;background-color:#f4f4f4;'></view>
+      <view style='height:21rpx;background-color:#fff;'></view>
+      <view class="goods-box" wx:for="{{listgoods}}" wx:key="_id" wx:for-item="item" data-id="{{item._id}}"
+        bindtap="toDetailsTap">
+        <template is="recommend-goods-item" data="{{item}}"> </template>
+      </view>
+    </view>
+  </view>
+  <view hidden="{{loadingMoreHidden ? true : false}}" class="weui-loadmore weui-loadmore_line"
+    style='margin-top:60rpx;margin-bottom:30rpx;'>
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">没有更多啦</view>
+  </view>
+</scroll-view>
+
+<mp-dialog title="联系方式：{{tele}}" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+        <view>{{intro}}</view>
+    </mp-dialog>

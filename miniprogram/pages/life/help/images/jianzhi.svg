@@ -1,0 +1,17 @@
+<svg width="78" height="78" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="80" width="80" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <ellipse stroke="#000" ry="74.40323" rx="74.40323" id="svg_1" cy="226.11573" cx="302.90323" stroke-width="1.5" fill="#CE7975"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="60" id="svg_2" y="244.7125" x="242.5" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#FFF5FF">义工</text>
+  <ellipse stroke="#000" ry="36.231891" rx="36.231891" id="svg_4" cy="38.700584" cx="39.021644" stroke-opacity="null" stroke-width="1.5" fill="#332D40"/>
+  <text style="cursor: move;" xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="35" id="svg_7" y="48.931571" x="3.552287" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#FFF5FF">兼职</text>
+ </g>
+</svg>
